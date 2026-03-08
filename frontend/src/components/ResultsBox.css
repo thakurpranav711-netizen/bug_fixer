@@ -1,0 +1,103 @@
+/* ============================================
+   ResultsBox.css - Results Display Styles
+   ============================================ */
+
+.results-box {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 24px;
+  overflow-y: auto;
+  max-height: 600px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+/* Headings in results */
+.result-heading {
+  font-size: 17px;
+  font-weight: 600;
+  color: #58a6ff;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #21262d;
+}
+
+.result-heading:first-child {
+  margin-top: 0;
+}
+
+/* List items */
+.result-list-item {
+  margin: 6px 0;
+  padding-left: 4px;
+  color: #e6edf3;
+}
+
+/* Inline code */
+.inline-code {
+  background: #21262d;
+  color: #f0883e;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+}
+
+/* Code blocks */
+.code-block-wrapper {
+  position: relative;
+  margin: 12px 0;
+}
+
+.code-block {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #e6edf3;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.code-block-wrapper:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background: #30363d;
+  color: #e6edf3;
+}
+
+/* Bold text */
+.results-box strong {
+  color: #f0883e;
+}
+
+/* Paragraphs */
+.results-box p {
+  margin: 8px 0;
+}
+
+/* Unordered lists */
+.results-box ul {
+  padding-left: 20px;
+}

@@ -1,0 +1,56 @@
+/* ============================================
+   CodeInput.css - Code Input Styles
+   ============================================ */
+
+.code-input-wrapper {
+  display: flex;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-height: 500px;
+}
+
+/* Line Numbers Column */
+.line-numbers {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  background: #161b22;
+  border-right: 1px solid #21262d;
+  user-select: none;
+  min-width: 50px;
+  overflow: hidden;
+}
+
+.line-number {
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  color: #484f58;
+  text-align: right;
+  padding: 0 12px;
+  line-height: 1.6;
+}
+
+/* Code Text Area */
+.code-textarea {
+  flex: 1;
+  background: transparent;
+  color: #e6edf3;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 16px;
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  tab-size: 2;
+  white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: auto;
+}
+
+.code-textarea::placeholder {
+  color: #484f58;
+}
